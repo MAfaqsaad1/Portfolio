@@ -7,6 +7,7 @@
 }
 body {
   background: linear-gradient(90deg, #1f2a31, #0e1418);
+  user-select: none;
 }
 .container {
   max-width: 84%;
@@ -28,16 +29,12 @@ details summary {
 }
 .whatsapp__chat {
   position: fixed;
-  bottom: 100px;
-  right: 50px;
+  bottom: 65px;
+  right: 45px;
   z-index: 99;
   height: 50px;
 }
-.whatsapp__chat1 {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-}
+
 .whatsapp__chat img {
   height: 50px;
   width: 100%;
@@ -336,7 +333,7 @@ header {
 .skill__para {
   color: #afafb6;
   line-height: 1.875rem;
-  text-align: justify;
+  /* text-align: justify; */
   margin-bottom: 8%;
   font-size: 1.125rem;
 }
@@ -423,10 +420,10 @@ header {
 }
 .services__heading {
   font-size: 230%;
-  margin-bottom: 3%;
+  /* margin-bottom: 3%; */
 }
 .color {
-  color: #f53b57;
+  color: #fff;
 }
 .underline {
   position: relative;
@@ -522,6 +519,15 @@ header {
   color: #f53b57;
   text-decoration: dotted;
   cursor: pointer;
+}
+figcaption {
+  font-size: 38px;
+  font-weight: 600;
+  color: #f53b57;
+  opacity: 0;
+}
+figure:hover figcaption {
+  opacity: 1;
 }
 
 /* .portfolio__imgs__1 {

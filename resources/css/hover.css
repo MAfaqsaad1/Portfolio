@@ -10,7 +10,7 @@
   --border-width: 3px;
   --border-color: #ffffff;
   --border-radius: 3px;
-  --image-opacity: 0.3;
+  --image-opacity: 0.15;
   display: inline-flex;
   position: relative;
   box-sizing: border-box;
