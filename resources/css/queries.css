@@ -106,6 +106,9 @@
   .whatsapp__chat img {
     opacity: 1;
   }
+  figcaption {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {

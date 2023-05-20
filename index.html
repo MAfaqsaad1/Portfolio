@@ -24,6 +24,16 @@
     <link rel="stylesheet" href="./resources/css/queries.css" />
     <link rel="stylesheet" href="./resources/css/hover.css" />
     <title>M.Afaq Masood</title>
+    <script>
+      // Function to show an alert on a specific URL
+      function showAlertOnURL() {
+        if (
+          window.location.href === "https://mafaqsaad1.github.io/Portfolio/"
+        ) {
+          alert("Welcome to the specific URL!");
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -529,7 +539,7 @@
             <input
               type="hidden"
               name="_next"
-              value="https://afaqmasood.netlify.app/"
+              value="https://mafaqsaad1.github.io/Portfolio/"
             />
           </label>
           <input
@@ -555,6 +565,7 @@
         glare: true,
         maxGlare: 0.3,
       });
+      showAlertOnURL();
     </script>
   </body>
 </html>
