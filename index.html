@@ -56,9 +56,12 @@
     </div>
     <nav>
       <div class="container">
-        <a title="" href="#" class="logo">Afaq <span>Masood</span></a>
-        <i class="fas fa-bars bar"></i>
-        <ul class="menu">
+        <a title="" href="#" class="logo absolute">Afaq <span>Masood</span></a>
+        <a id="toggleButton">
+          <i class="fas fa-bars bar"></i>
+        </a>
+
+        <ul class="menu" id="navbarLinks">
           <li><a title="" href="#" class="current">Home</a></li>
           <li><a title="About Me" href="#about">About</a></li>
           <li><a title="My Skills" href="#skill">Skills</a></li>
@@ -137,7 +140,7 @@
 
             <a
               title="Download CV"
-              href="./resources/Afaq_CV.pdf"
+              href="./resources/Afaq_CV@Latest.pdf"
               target="_blank"
               class="cta about__cta"
               >Download CV</a
@@ -158,7 +161,7 @@
               <li>
                 Building reusable components for future use Meeting with the
                 development team to discuss user interface ideas and
-                applications☻
+                applications
               </li>
             </ul>
             <h1 class="skill__years">2 <span>+ Years of experience</span></h1>
@@ -167,24 +170,24 @@
         <div class="col span-1-of-2">
           <div class="skills">
             <div class="col span-1-of-2">
-              <div class="skill__1">
-                <h2 class="skill__name">HTML / CSS</h2>
-                <h1 class="skill__percent">80%</h1>
-              </div>
-              <div class="skill__2">
-                <h2 class="skill__name">JavaScript</h2>
-                <h1 class="skill__percent">50%</h1>
-              </div>
+              <ul class="skill__1">
+                <li class="skill__name">React Js</li>
+                <li class="skill__name">JavaScript</li>
+                <li class="skill__name">Amazon Web services</li>
+                <li class="skill__name">Shopify</li>
+                <li class="skill__name">HTML & CSS</li>
+                <li class="skill__name">Tailwind CSS</li>
+              </ul>
             </div>
             <div class="col span-1-of-2">
-              <div class="skill__3">
-                <h2 class="skill__name">Flutter</h2>
-                <h1 class="skill__percent">40%</h1>
-              </div>
-              <div class="skill__4">
-                <h2 class="skill__name">React</h2>
-                <h1 class="skill__percent">60%</h1>
-              </div>
+              <ul class="skill__1">
+                <li class="skill__name">Flutter</li>
+                <li class="skill__name">Rest APIs</li>
+                <li class="skill__name">MySQL</li>
+                <li class="skill__name">Git & GitHub</li>
+                <li class="skill__name">Figma | UI/UX</li>
+                <li class="skill__name">Bootstrap</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -203,7 +206,7 @@
         <div class="cards">
           <a
             title="FrontEnd Devoloper Certificate"
-            href="https://www.fiverr.com/afaqmasood1?up_rollout=true"
+            href="https://developers.google.com/profile/u/afaqmasood"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -241,7 +244,7 @@
           <div class="col span-1-of-3">
             <a
               title="Google Certificate"
-              href="./resources/Course_Certificate.pdf"
+              href="./resources/Google_Analytics_Certification.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -251,7 +254,7 @@
                   <h2 class="card__heading">Google Analytics</h2>
                   <p class="card__para">
                     Awarded for successfully completing the course "Google
-                    Analytics for Beginners"
+                    Analytics Certification"
                   </p>
                 </div>
               </div>
@@ -266,7 +269,7 @@
           Recently Done <span>Projects</span> Quality Work
         </h1>
       </div>
-      <div class="container">
+      <!-- <div class="container">
         <ul class="portfolio__menu">
           <li><a title="" href="#portfolio">All</a></li>
           <li><a title="" href="#portfolio">Popular</a></li>
@@ -274,7 +277,7 @@
           <li><a title="" href="#portfolio">Following</a></li>
           <li><a title="" href="#portfolio">UpComing</a></li>
         </ul>
-      </div>
+      </div> -->
       <div class="container">
         <div class="portfolio__imgs">
           <div class="col span-1-of-3">
@@ -566,6 +569,21 @@
         maxGlare: 0.3,
       });
       showAlertOnURL();
+
+      // JavaScript to toggle the navbar
+      const navbarLinks = document.getElementById("navbarLinks");
+      const toggleButton = document.getElementById("toggleButton");
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("show_nav");
+
+        // Change the toggle button icon based on the navbar state
+        if (navbarLinks.classList.contains("show_nav")) {
+          toggleButton.innerHTML = '<i class="fa-solid fa-xmark bar"></i>'; // Xmark icon
+        } else {
+          toggleButton.innerHTML = ' <i class="fas fa-bars bar"></i>'; // Bars icon
+        }
+      });
     </script>
   </body>
 </html>

@@ -32,24 +32,16 @@ details summary {
   bottom: 65px;
   right: 45px;
   z-index: 99;
-  height: 50px;
+  /* height: 50px; */
 }
 
 .whatsapp__chat img {
   height: 50px;
-  width: 100%;
+  /* width: 100%; */
   /* height: 100%; */
   opacity: 0.6;
 }
 
-.whatsapp__span {
-  background-color: white;
-  padding: 10px 24px;
-  border-radius: 7px;
-  margin-top: 10px;
-  font-size: 14px;
-  opacity: 0;
-}
 .whatsapp__logo:hover {
   opacity: 1;
 }
@@ -59,6 +51,9 @@ nav {
   background: #2b333a;
   position: fixed;
   z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 nav .container {
   padding-top: 1.2%;
@@ -75,16 +70,29 @@ nav .container {
 .flex {
   display: inline-block;
 }
+.about_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  margin: 0 auto;
+  align-items: center;
+  height: 100%;
+}
+.fa-circle-xmark {
+  font-size: 1.6rem;
+}
 .logo {
   font-size: 1.563rem;
   font-weight: bold;
+}
+.absolute {
   position: absolute;
 }
 .logo span {
   color: #f53b57;
 }
 .menu {
-  padding: 0.7rem 1rem 0 0;
+  padding: 0.5rem 1rem 0 0;
   /* position: absolute; */
   /* left: 30%; */
   margin-left: 25%;
@@ -349,12 +357,19 @@ header {
 }
 .skills {
   width: 100%;
-  height: 60vh;
-  margin-top: 10%;
-  color: #f53b57;
+  height: 45vh;
+  margin-top: 23%;
+  color: white;
+  /* color: #f53b57; */
 }
 .skill__name {
   font-size: 1.375rem;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+.skill__name:hover {
+  color: #f53b57;
+  transition: all 0.3s ease-in-out;
 }
 .skill__percent {
   font-size: 5rem;
@@ -366,51 +381,9 @@ header {
   counter-reset: count 0;
 } */
 
-@keyframes counter {
-  0% {
-    counter-increment: count 00;
-  }
-  10% {
-    counter-increment: count 10;
-  }
-  20% {
-    counter-increment: count 20;
-  }
-  30% {
-    counter-increment: count 30;
-  }
-  40% {
-    counter-increment: count 40;
-  }
-  50% {
-    counter-increment: count 50;
-  }
-  60% {
-    counter-increment: count 60;
-  }
-  70% {
-    counter-increment: count 70;
-  }
-  80% {
-    counter-increment: count 80;
-  }
-  90% {
-    counter-increment: count 90;
-  }
-  100% {
-    counter-increment: count 100;
-  }
-}
-
-.skill__2 {
-  margin-top: 10%;
-}
-.skill__3 {
-  margin-bottom: 10%;
-}
 .services {
   width: 100%;
-  height: 90vh;
+  height: 70vh;
 }
 .services__content {
   color: white;
@@ -440,7 +413,7 @@ header {
   color: #afafb6;
 }
 .cards {
-  margin-top: 8%;
+  margin-top: 4%;
 }
 .card {
   text-align: center;
@@ -490,7 +463,7 @@ header {
   color: #f53b57;
 }
 .portfolio__menu {
-  margin-top: 7%;
+  margin-top: 4%;
 }
 .portfolio__menu li {
   list-style: none;
@@ -504,7 +477,7 @@ header {
   /* opacity: 0.7; */
 }
 .portfolio__imgs {
-  margin-top: 10%;
+  margin-top: 4%;
   /* margin-bottom: 10%; */
 }
 /* .portfolio__img__2 {
@@ -521,7 +494,7 @@ header {
   cursor: pointer;
 }
 figcaption {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 600;
   color: #f53b57;
   opacity: 0;
@@ -643,7 +616,7 @@ textarea {
 }
 footer {
   margin-top: 3rem;
-  color: #e6e6e6;
+  color: #e6e6e663;
   background-color: #2b333a;
   height: 9vh;
   text-align: center;

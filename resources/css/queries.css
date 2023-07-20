@@ -53,9 +53,7 @@
   .skills {
     width: 100%;
   }
-  .skill__percent {
-    font-size: 4.063rem;
-  }
+
   .skill__2,
   .skill__4 {
     margin-top: 40%;
@@ -112,6 +110,34 @@
 }
 
 @media (max-width: 480px) {
+  .menu {
+    display: block;
+    background-color: black;
+    width: 65%;
+    margin-left: 0;
+    padding: 30px 20px;
+    height: 90vh;
+    position: fixed;
+    top: 10vh;
+    /* left: 0; */
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+  }
+  .show_nav {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    /* transition: all 0.5s ease-out; */
+  }
+  .menu li {
+    float: none;
+    /* text-align: center; */
+    padding-bottom: 1rem;
+    text-align: right;
+  }
   .logo {
     margin-top: 1%;
   }
@@ -140,14 +166,10 @@
     margin-bottom: 10%;
   }
   .skills {
-    width: 50%;
-    margin: 10% 0 0 30%;
+    /* width: 50%; */
+    margin: 10% 0 10% 10%;
   }
-  .skill__2,
-  .skill__4 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
+
   .services {
     height: auto;
   }
