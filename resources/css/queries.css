@@ -112,7 +112,8 @@
 @media (max-width: 480px) {
   .menu {
     display: block;
-    background-color: black;
+    /* background: linear-gradient(90deg, #101417, #020203); */
+    background: #21272c;
     width: 65%;
     margin-left: 0;
     padding: 30px 20px;
